@@ -104,6 +104,18 @@ header .follow a:hover{
     color: var(--facebook);
 }
 
+.twitter:hover{
+    color: var(--twitter);
+}
+
+.instagram:hover{
+    color: var(--instagram);
+}
+
+.youtube:hover{
+    color: var(--youtube);
+}
+
 
 
     
