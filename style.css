@@ -85,6 +85,35 @@ header .follow a{
     color: #aaa;
     margin: 0 .7rem;
     margin-top: 100px;
+    transition: .2s;
+}
+
+header .follow:hover a{
+    filter: blur(2px);
+}
+
+header .follow a:hover{
+    transform: translateY(-3px) scale(1.05);
+    filter: none;
+    
+    
+    
+}
+
+.facebook:hover{
+    color: var(--facebook);
+}
+
+
+
+    
+
+
+:root{
+    --facebook: #3b5999;
+    --instagram: #e4405f;
+    --twitter: #55acee;
+    --youtube: #ff0000;
 }
 
 section{
