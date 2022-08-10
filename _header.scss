@@ -1,0 +1,65 @@
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    flex-flow: column;
+    padding: 8rem 2rem;
+    font-family: 'Righteous', sans-serif;
+    .logo{
+        color: #aaa;
+        font-size: 3rem;
+        font-weight: bolder;
+        margin-bottom: 100px;
+         
+    }
+    .span{
+        color: brown
+    }
+    .navbarx a{
+        display: block;
+        font-size: 2rem;
+        color: #aaa;
+        margin: 2rem 0;
+        font-family: $fuente1;
+        &:hover{
+            letter-spacing: .1rem;
+            color: brown;
+        }
+    }
+    .follow a{
+        font-size: 2.5rem;
+        color: #aaa;
+        margin: 0 .7rem;
+        margin-top: 100px;
+        transition: .2s;
+        &:hover{
+            transform: translateY(-3px) scale(1.05);
+            filter: none;
+        }
+        .facebook:hover{
+            color: var(--facebook);
+        }
+        .twitter:hover{
+            color: var(--twitter);
+        }
+        .instagram:hover{            
+            background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;           
+            
+        }
+        .youtube:hover{
+            color: var(--youtube);
+        }
+
+    }        
+}
+
