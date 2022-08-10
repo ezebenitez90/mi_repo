@@ -72,7 +72,7 @@ header .logo span{
     color: brown
 }
 
-header .navbar a{
+header .navbarx a{
     display: block;
     font-size: 2rem;
     color: #aaa;
@@ -85,6 +85,52 @@ header .follow a{
     color: #aaa;
     margin: 0 .7rem;
     margin-top: 100px;
+    transition: .2s;
+}
+
+header .follow:hover a{
+    filter: blur(2px);
+}
+
+header .follow a:hover{
+    transform: translateY(-3px) scale(1.05);
+    filter: none;
+    
+    
+    
+}
+
+.facebook:hover{
+    color: var(--facebook);
+}
+
+.twitter:hover{
+    color: var(--twitter);
+}
+
+.instagram:hover{
+    /*color: var(--instagram);*/
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    
+}
+
+.youtube:hover{
+    color: var(--youtube);
+}
+
+
+
+ 
+
+
+:root{
+    --facebook: #3b5999;
+    --instagram: #e4405f;
+    --twitter: #55acee;
+    --youtube: #ff0000;
 }
 
 section{
@@ -170,7 +216,7 @@ section{
     letter-spacing: .2rem;
 }
 
-header .navbar a:hover{
+header .navbarx a:hover{
     letter-spacing: .1rem;
     color: brown;
 }
@@ -273,7 +319,7 @@ header .navbar a:hover{
     position: absolute;
     height: 100%;
     width: 100%;
-    opacity: %;
+    
 
 }
 
@@ -324,6 +370,7 @@ header .navbar a:hover{
 
     body{
         padding: 0;
+        margin-bottom: 100%;
     }
 
     #menu{
@@ -396,6 +443,7 @@ header .navbar a:hover{
     .h1-galeria{
         margin-top: 20%;
     }
+    
 
 }
 
@@ -454,7 +502,7 @@ header .navbar a:hover{
     height: 100%;
     object-fit: cover;
     grid-column-start: span 2;
-    background-image: url(/Pages/media/FotosBio/kisspng-race-track-racing-golden-port-race-track-5a7bedd15654d8.1480819115180712493536.png);
+    background-image: url(media/wp5748138-minimalist-black-and-white-wallpapers.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -464,11 +512,11 @@ header .navbar a:hover{
     
 }
 
-.bio-item-casco img{
+
    
     
     
-}
+
 
 .contenedor-casco h3{
     
@@ -511,4 +559,33 @@ header .navbar a:hover{
 .bio-stats--data span{
     display: block;
     font-size: 30px;
+}
+
+.contact--content{
+    
+    position: relative;
+    width: 100%;
+    flex: 0 1 100%;
+    padding: 0 25px;
+    margin: 40px 0;
+}
+
+.contenedor-contacto{
+    display: block;
+}
+
+@media (min-width: 600px){
+.contact--content {
+    max-width: 350px;
+    margin-left: 10px;
+}
+}
+
+.tituloequipo{
+    background-color: brown;
+    
+    width: 55%;
+   
+    
+    
 }

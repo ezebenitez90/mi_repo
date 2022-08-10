@@ -457,7 +457,7 @@ header .navbar a:hover{
         padding: 0;
     }
 
-    #menu{
+    #menu-bars{
         display: initial;
     }
 
@@ -520,12 +520,15 @@ header .navbar a:hover{
         padding: 0;
     }
 
-    #menu{
+    #menu-bars{
         display: initial;
     }
 
     header{
         left: -120%;
+    }
+    header.active{
+        left: 0%;
     }
     .home{
         margin: 0;
@@ -568,7 +571,41 @@ header .navbar a:hover{
        
         
     }
+
+    
     
 
 
+}
+
+
+
+/*bootstrap - Carousel*/
+
+
+
+
+
+.carousel{
+    width: 20%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+
+.contenedor2{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px 20px;
+    
+    
+}
+
+.contenedor2 .auspiciantes{
+    font-size: 40px;
+    margin-bottom: 0px;
+    color: #aaa;
+    font-family: 'Voces', cursive;
+    padding-bottom: 0px;
 }
