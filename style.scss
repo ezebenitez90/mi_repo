@@ -1,6 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100;300;400;500;700&display=swap');
 @import "variables";
+@import "variables";
+@import "query";
+
+
 
 *{
     
@@ -9,8 +13,7 @@
     box-sizing: border-box;
     outline: none;
     border: none;
-    text-decoration: none;
-    text-transform: capitalize;
+    
     transition: all .2s linear;
     line-height: 1.5;
 
@@ -29,6 +32,8 @@ body{
     
     
 }
+
+
 
 
 #menu-bars{
@@ -57,9 +62,12 @@ header{
     flex-flow: column;
     padding: 8rem 2rem;
     font-family: 'Righteous', sans-serif;
+    text-decoration: none;
     
         
 }
+
+
 
 html{
     font-size: 62%;
@@ -72,6 +80,7 @@ header .logo{
     font-size: 3rem;
     font-weight: bolder;
     margin-bottom: 100px;
+    text-decoration: none;
     
 
 }
@@ -154,7 +163,19 @@ section{
     flex-wrap: wrap;
     gap: 1.5rem;
     padding-top: 70px;
-    margin-left: 100px;
+    /*margin-left: 100px;*/
+    
+    
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                  url(/media/header.index.foto.jpeg);
+
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    height: 110vh;
+    
 
 
 }
@@ -176,32 +197,41 @@ section{
 
 .home .content{
     flex: 1 1 40rem;
-    font-family: 'Hind Madurai', sans-serif;    
+    font-family: 'Hind Madurai', sans-serif;
+    /*background-color: rgba(0, 0, 0, 0.226);*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    
 }
 
 .home .content .hola{
-    font-size: 7rem;
+    font-size: 7.5rem;
 }
 
 .home .content .mellamo{
-    font-size: 4.5rem;
+    font-size: 7.5rem;
     
 }
 
 .enzo{
     color: brown;
-    font-size: 6rem;
+    font-size: 10rem;
     font-family: $fuente1;
+    font-family: 'Righteous', sans-serif;
 }
 
 
 
 .home .content .info{
-    font-size: 2.5rem;
+    font-size: 5rem;
 }
 
 .home .content .text{
-    font-size: 1.7rem;
+    font-size: 2rem;
 }
 
 .home .image img{
@@ -211,12 +241,12 @@ section{
 
 .btn{
     display: inline-block;
-    margin-top: 1rem;
+    margin-top: 2rem;
     padding: .8rem 3rem;
     background-color: brown;
     color: aliceblue;
     cursor: pointer;
-    font-size: 1.7rem;
+    font-size: 3rem;
 }
 
 
@@ -276,8 +306,8 @@ header .navbarx a:hover{
 }
 
 
-.contenedor .box-contenedor .box .card{
-    margin-bottom: 20px;
+.contenedor .box-contenedor .box .card .card-a{
+    margin-bottom: 0px;
     overflow: hidden;
     height: 250px;
     border-radius: 5px;
@@ -285,33 +315,37 @@ header .navbarx a:hover{
 
 }
 
-.contenedor .box-contenedor .box .card img{
+.contenedor .box-contenedor .box .card .card-a img{
     height: 100%;
     width: 100%;
     border-bottom: 1px solid #aaa;
     padding-bottom: 20px;
-    opacity: 50%;
+    opacity: 60%;
+    background: rgb(0, 0, 0.5);
+    
+    
     
 }
 
-.contenedor .box-contenedor .box:hover .card img{
+.contenedor .box-contenedor .box:hover .card  .card-a img{
     transform: scale(1.1);
     border-bottom: 1px solid #aaa;
     opacity: 100;
+   
     
 }
 
 .contenedor .box-contenedor .box .card-contenido{
     font-size: 20px;
     
-    margin-top: 10px;
+    margin-top: 30px;
     font-family: $fuente1;
     
 }
 
 .video-contenedor{
     display: flex;
-   box-shadow: 0 5px 10px rgba(0,0,0,.2);
+   box-shadow: 0 5px 10px rgba(0,0,0,.3);
    position: relative;
    overflow: hidden; 
    justify-content: center;
@@ -332,6 +366,18 @@ header .navbarx a:hover{
     
 
 }
+
+.video-eprom {
+    /*
+    justify-content: center;
+    align-items: center;*/
+    align-items: flex-end;
+  }
+  
+  .centrar {
+    display: flex;
+    justify-content: center;
+  }/*# sourceMappingURL=style2.css.map */
 
 
 
@@ -389,7 +435,7 @@ header .navbarx a:hover{
     .contenedor .box-contenedor .box .card-contenido{
         font-size: 15px;
         
-        margin-top: 2px;
+        margin-top: 20px;
         font-family: $fuente1;
         
     }
@@ -453,7 +499,7 @@ header .navbarx a:hover{
     .contenedor .box-contenedor .box .card-contenido{
         font-size: 15px;
         
-        margin-top: 2px;
+        margin-top: 20px;
         
         
     }
@@ -516,7 +562,7 @@ header .navbarx a:hover{
     .contenedor .box-contenedor .box .card-contenido{
         font-size: 15px;
         
-        margin-top: 2px;
+        margin-top: 20px;
        
         
     }
@@ -582,7 +628,7 @@ header .navbarx a:hover{
     .contenedor .box-contenedor .box .card-contenido{
         font-size: 15px;
         
-        margin-top: 2px;
+        margin-top: 20px;
        
         
     }
@@ -625,9 +671,48 @@ header .navbarx a:hover{
     padding-bottom: 0px;
 }
 
+
+
+
+.practica{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 600px;
+    width: 100%;
+    .div{
+        width: 100px;
+        height: 100px;
+        background-color: lightblue;
+    }
+}
+
+
 /*ANIDACION*/
 
-@import "header";
+
+
+/*CONDICIONALES*/
+@if $colorFondo == "si"{
+/* Relleno de Colores */
+/* Bucle For */
+@for $i from 1 through 3 {
+    .box{
+        background-color: map-get($mapaColores, $i );
+    }
+} 
+}
+@else if $colorFondo == "no"{
+    /*Borde de Color*/
+    /* Bucle Each */
+
+}
+@else{
+    /* Haga algo por defecto */
+}
+
+
 
 
 

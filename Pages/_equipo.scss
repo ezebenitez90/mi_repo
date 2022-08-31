@@ -1,0 +1,52 @@
+.white{
+    color: white;
+}
+
+.black{
+    color: black;
+}
+
+.bg-white{
+    background-color: white;
+}
+.gray{
+    color: #333;
+}
+.bg-brown{
+    background-color: brown;
+}
+
+.bg-light-gray{
+    background-color: #aaa;
+}
+
+h3{
+    font-size: 0.9rem;
+}
+.bg-gray{
+    background-color: #F4F4F4;
+    
+}
+.bg-dark-gray{
+    background-color: #1E1F23;
+}
+.bg-dark-gray2{
+    background-color: #121315;
+}
+#galeriaEquipo img {
+    width: 100%;
+    
+}
+
+
+.video-eprom{
+    /*
+    justify-content: center;
+    align-items: center;*/
+    align-items: flex-end;
+}
+
+.centrar{
+    display:flex; 
+    justify-content:center;
+}
