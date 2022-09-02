@@ -3,183 +3,6 @@
 /*MAPAS*/
 /*VARIABLES*/
 /*MAPAS*/
-@media screen and (max-width: 320px) {
-  html {
-    font-size: 55%;
-  }
-  body {
-    padding: 0;
-    
-  }
-  #menu-bars {
-    display: initial;
-  }
-  header {
-    left: -120%;
-  }
-  .home {
-    margin: 0;
-    text-align: center;
-  }
-  .btn {
-    display: flex;
-    justify-items: center;
-    justify-content: center;
-  }
-  .contenedor .box-contenedor {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  .contenedor .box-contenedor .box {
-    height: auto;
-    width: auto;
-  }
-  .contenedor .ultimasNoticias {
-    padding-bottom: 10px;
-  }
-  .contenedor .box-contenedor .box .card {
-    overflow: hidden;
-    height: 170px;
-  }
-  .contenedor .box-contenedor .box .card-contenido {
-    font-size: 15px;
-    margin-top: 20px;
-    font-family: "Voces", cursive;
-  }
-}
-@media screen and (max-width: 480px) {
-  html {
-    font-size: 55%;
-  }
-  body {
-    padding: 0;
-  }
-  #menu-bars {
-    display: initial;
-  }
-  header {
-    left: -120%;
-  }
-  .home {
-    margin: 0;
-    text-align: center;
-  }
-  .btn {
-    display: flex;
-    justify-items: center;
-    justify-content: center;
-  }
-  .contenedor .box-contenedor {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  .contenedor .box-contenedor .box {
-    height: auto;
-    width: auto;
-  }
-  .contenedor .ultimasNoticias {
-    padding-bottom: 10px;
-  }
-  .contenedor .box-contenedor .box .card {
-    overflow: hidden;
-    height: 200px;
-  }
-  .contenedor .box-contenedor .box .card-contenido {
-    font-size: 15px;
-    margin-top: 20px;
-  }
-}
-@media screen and (max-width: 600px) {
-  html {
-    font-size: 55%;
-  }
-  body {
-    padding: 0;
-  }
-  #menu-bars {
-    display: initial;
-  }
-  header {
-    left: -120%;
-  }
-  .home {
-    margin: 0;
-    text-align: center;
-  }
-  .btn {
-    display: flex;
-    justify-items: center;
-    justify-content: center;
-  }
-  .contenedor .box-contenedor {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  .contenedor .box-contenedor .box {
-    height: auto;
-    width: auto;
-  }
-  .contenedor .ultimasNoticias {
-    padding-bottom: 10px;
-  }
-  .contenedor .box-contenedor .box .card {
-    overflow: hidden;
-    height: 200px;
-  }
-  .contenedor .box-contenedor .box .card-contenido {
-    font-size: 15px;
-    margin-top: 20px;
-  }
-}
-@media screen and (max-width: 768px) {
-  html {
-    font-size: 55%;
-  }
-  body {
-    padding: 0;
-  }
-  #menu-bars {
-    display: initial;
-  }
-  header {
-    left: -120%;
-  }
-  header.active {
-    left: 0%;
-  }
-  .home {
-    margin: 0;
-    text-align: center;
-  }
-  .btn {
-    display: flex;
-    justify-items: center;
-    justify-content: center;
-  }
-  .contenedor .box-contenedor {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  .contenedor .box-contenedor .box {
-    height: auto;
-    width: auto;
-  }
-  .contenedor .ultimasNoticias {
-    padding-bottom: 10px;
-  }
-  .contenedor .box-contenedor .box .card {
-    overflow: hidden;
-    height: 200px;
-  }
-  .contenedor .box-contenedor .box .card-contenido {
-    font-size: 15px;
-    margin-top: 20px;
-  }
-}
 * {
   margin: 0;
   padding: 0;
@@ -477,13 +300,65 @@ header .navbarx a:hover {
   display: flex;
   justify-content: center;
 } /*# sourceMappingURL=style2.css.map */
+/*bootstrap - Carousel*/
+.carousel {
+  width: 20%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.contenedor2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.contenedor2 .auspiciantes {
+  font-size: 40px;
+  margin-bottom: 0px;
+  color: #aaa;
+  font-family: "Voces", cursive;
+  padding-bottom: 0px;
+}
+
+.practica {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 600px;
+  width: 100%;
+}
+.practica .div {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+}
+
+/*ANIDACION*/
+/*CONDICIONALES*/
+/* Relleno de Colores */
+/* Bucle For */
+.box {
+  background-color: brown;
+}
+
+.box {
+  background-color: #aaa;
+}
+
+.box {
+  background-color: #111;
+}
+
+/* MEDIA QUERY*/
 @media screen and (max-width: 320px) {
   html {
     font-size: 55%;
   }
   body {
     padding: 0;
-    
   }
   #menu-bars {
     display: initial;
@@ -653,55 +528,4 @@ header .navbarx a:hover {
     font-size: 15px;
     margin-top: 20px;
   }
-}
-/*bootstrap - Carousel*/
-.carousel {
-  width: 20%;
-  margin: 0 auto;
-  margin-bottom: 100px;
-}
-
-.contenedor2 {
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 100px 20px;
-}
-
-.contenedor2 .auspiciantes {
-  font-size: 40px;
-  margin-bottom: 0px;
-  color: #aaa;
-  font-family: "Voces", cursive;
-  padding-bottom: 0px;
-}
-
-.practica {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 600px;
-  width: 100%;
-}
-.practica .div {
-  width: 100px;
-  height: 100px;
-  background-color: lightblue;
-}
-
-/*ANIDACION*/
-/*CONDICIONALES*/
-/* Relleno de Colores */
-/* Bucle For */
-.box {
-  background-color: brown;
-}
-
-.box {
-  background-color: #aaa;
-}
-
-.box {
-  background-color: #111;
 }/*# sourceMappingURL=style.css.map */
