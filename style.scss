@@ -176,6 +176,7 @@ section{
     background-size:cover;
     height: 110vh;
     
+    
 
 
 }
@@ -201,15 +202,17 @@ section{
     /*background-color: rgba(0, 0, 0, 0.226);*/
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 55%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
+    
     
 }
 
 .home .content .hola{
     font-size: 7.5rem;
+    
 }
 
 .home .content .mellamo{
@@ -222,7 +225,15 @@ section{
     font-size: 10rem;
     font-family: $fuente1;
     font-family: 'Righteous', sans-serif;
+    -webkit-text-stroke: 1.5px #111;
+    /*background: linear-gradient(to right, rgb(80, 8, 8), brown);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;*/
+    
+    
 }
+
+
 
 
 
@@ -241,7 +252,7 @@ section{
 
 .btn{
     display: inline-block;
-    margin-top: 2rem;
+    margin-top: 5rem;
     padding: .8rem 3rem;
     background-color: brown;
     color: aliceblue;
@@ -253,7 +264,7 @@ section{
 
 .btn:hover{
     background: black;
-    letter-spacing: .2rem;
+    letter-spacing: .1rem;
 }
 
 header .navbarx a:hover{
@@ -401,6 +412,7 @@ header .navbarx a:hover{
     .home{
         margin: 0;
         text-align: center;
+        
         
     }
     .btn{
