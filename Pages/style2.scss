@@ -7,7 +7,7 @@
     outline: none;
     border: none;
     text-decoration: none;
-    text-transform: capitalize;
+    text-transform: none;
     transition: all .2s linear;
     line-height: 1.5;
 
@@ -50,7 +50,7 @@ header{
     flex-flow: column;
     padding: 8rem 2rem;
     font-family: 'Righteous', sans-serif;
-    text-decoration: none; 
+    text-decoration: none;
         
 }
 
@@ -80,6 +80,7 @@ header .navbarx a{
     color: #aaa;
     margin: 2rem 0;
     font-family: 'Voces', cursive;
+    text-decoration: none;
 }
 
 header .follow a{
@@ -363,126 +364,14 @@ header .navbarx a:hover{
 
 
 
-/*media Queries*/
 
-@media screen and (max-width:320px){
-    html{
-        font-size: 55%;
-        
-    }
-
-    body{
-        padding: 0;
-        margin-bottom: 100%;
-    }
-
-    #menu{
-        display: initial;
-    }
-
-    header{
-        left: -120%;
-    }
-    .home{
-        margin: 0;
-        text-align: center;
-        
-    }
-    
-    .h1-galeria{
-        margin-top: 20%;
-    }
-    
-    .grid-container{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-       
-    }
-
-    .galeria-item7{
-        grid-column-start: span 1;
-        grid-row-start: span 1;
-    }
-    
-    .galeria-item10{
-        
-        grid-row-start: span 1;
-    }
-
-}
-
-
-@media screen and (max-width:480px){
-    
-    .h1-galeria{
-        margin-top: 20%;
-    }
-
-}
-
-@media screen and (max-width:600px){
-    html{
-        font-size: 55%;
-        
-    }
-
-    body{
-        padding: 0;
-    }
-
-    #menu{
-        display: initial;
-    }
-
-    header{
-        left: -120%;
-    }
-    .home{
-        margin: 0;
-        text-align: center;
-        
-    }
-    
-    .h1-galeria{
-        margin-top: 20%;
-    }
-    
-
-}
-
-@media screen and (max-width:768px){
-    html{
-        font-size: 55%;
-        
-    }
-
-    body{
-        padding: 0;
-    }
-
-    #menu{
-        display: initial;
-    }
-
-    header{
-        left: -120%;
-    }
-    .home{
-        margin: 0;
-        text-align: center;
-        
-    }
-    .h1-galeria{
-        margin-top: 20%;
-    }
-}
 
 
 /*BIOGRAFIA*/
 
 .bio-item{
     background-color: none;
-    border: solid 1px;
+    
 }
 
 .grid-container-bio{

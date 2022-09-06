@@ -1,0 +1,101 @@
+/* MEDIA QUERY*/
+    @media screen and (max-width: 810px) {
+        .foto_bio img{
+           
+        }
+        .bio-stats--content{
+            text-align: center;
+        }
+    }
+
+
+  @media screen and (max-width: 768px) {
+    html {
+      font-size: 55%;
+    }
+    body {
+      padding: 0;
+    }
+    #menu-bars {
+      display: initial;
+    }
+    header {
+      left: -120%;
+    }
+    header.active {
+      left: 0%;
+    }
+     
+    .galeriaFotos{
+        margin-top: 100px;
+    }
+    
+  }
+
+
+
+  @media screen and (max-width: 600px) {
+    html {
+      font-size: 55%;
+    }
+    body {
+      padding: 0;
+    }
+    #menu-bars {
+      display: initial;
+    }
+    header {
+      left: -120%;
+    }
+    header.active {
+      left: 0%;
+    }
+     
+    .galeriaFotos{
+        margin-top: 100px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    html {
+      font-size: 55%;
+    }
+    body {
+      padding: 0;
+    }
+    #menu-bars {
+      display: initial;
+    }
+    header {
+      left: -120%;
+    }
+    header.active {
+      left: 0%;
+    }
+     
+    .galeriaFotos{
+        margin-top: 100px;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    html {
+      font-size: 55%;
+    }
+    body {
+      padding: 0;
+    }
+    #menu-bars {
+      display: initial;
+    }
+    header {
+      left: -120%;
+    }
+    header.active {
+      left: 0%;
+    }
+     
+    .galeriaFotos{
+        margin-top: 100px;
+    }
+  }

@@ -74,6 +74,7 @@ header .navbarx a {
   color: #aaa;
   margin: 2rem 0;
   font-family: "Voces", cursive;
+  text-decoration: none;
 }
 
 header .follow a {

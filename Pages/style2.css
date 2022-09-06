@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100;300;400;500;700&display=swap");
-@import url();
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +6,7 @@
   outline: none;
   border: none;
   text-decoration: none;
-  text-transform: capitalize;
+  text-transform: none;
   transition: all 0.2s linear;
   line-height: 1.5;
 }
@@ -72,6 +71,7 @@ header .navbarx a {
   color: #aaa;
   margin: 2rem 0;
   font-family: "Voces", cursive;
+  text-decoration: none;
 }
 
 header .follow a {
@@ -301,91 +301,9 @@ header .navbarx a:hover {
   grid-row-start: span 2;
 }
 
-/*media Queries*/
-@media screen and (max-width: 320px) {
-  html {
-    font-size: 55%;
-  }
-  body {
-    padding: 0;
-    margin-bottom: 100%;
-  }
-  #menu {
-    display: initial;
-  }
-  header {
-    left: -120%;
-  }
-  .home {
-    margin: 0;
-    text-align: center;
-  }
-  .h1-galeria {
-    margin-top: 20%;
-  }
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .galeria-item7 {
-    grid-column-start: span 1;
-    grid-row-start: span 1;
-  }
-  .galeria-item10 {
-    grid-row-start: span 1;
-  }
-}
-@media screen and (max-width: 480px) {
-  .h1-galeria {
-    margin-top: 20%;
-  }
-}
-@media screen and (max-width: 600px) {
-  html {
-    font-size: 55%;
-  }
-  body {
-    padding: 0;
-  }
-  #menu {
-    display: initial;
-  }
-  header {
-    left: -120%;
-  }
-  .home {
-    margin: 0;
-    text-align: center;
-  }
-  .h1-galeria {
-    margin-top: 20%;
-  }
-}
-@media screen and (max-width: 768px) {
-  html {
-    font-size: 55%;
-  }
-  body {
-    padding: 0;
-  }
-  #menu {
-    display: initial;
-  }
-  header {
-    left: -120%;
-  }
-  .home {
-    margin: 0;
-    text-align: center;
-  }
-  .h1-galeria {
-    margin-top: 20%;
-  }
-}
 /*BIOGRAFIA*/
 .bio-item {
   background-color: none;
-  border: solid 1px;
 }
 
 .grid-container-bio {
@@ -475,6 +393,19 @@ header .navbarx a:hover {
   width: 55%;
 }
 
+#menu-bars {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10000;
+  background: brown;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  font-size: 3rem;
+  display: none;
+  cursor: pointer;
+}
+
 .gallery {
   padding: 80px 0px;
 }
@@ -561,23 +492,74 @@ h3 {
 .centrar {
   display: flex;
   justify-content: center;
-}/*# sourceMappingURL=style2.css.map */
-
-/*MEDIA QUERY*/
-
-#menu-bars {
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-  z-index: 10000;
-  background: brown;
-  border-radius: 0.5rem;
-  padding: 1rem 1.5rem;
-  font-size: 3rem;
-  display: none;
-  cursor: pointer;
 }
 
+/* MEDIA QUERY*/
+@media screen and (max-width: 810px) {
+  .bio-stats--content {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+  body {
+    padding: 0;
+  }
+  #menu-bars {
+    display: initial;
+  }
+  header {
+    left: -120%;
+  }
+  header.active {
+    left: 0%;
+  }
+  .galeriaFotos {
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 55%;
+  }
+  body {
+    padding: 0;
+  }
+  #menu-bars {
+    display: initial;
+  }
+  header {
+    left: -120%;
+  }
+  header.active {
+    left: 0%;
+  }
+  .galeriaFotos {
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 55%;
+  }
+  body {
+    padding: 0;
+  }
+  #menu-bars {
+    display: initial;
+  }
+  header {
+    left: -120%;
+  }
+  header.active {
+    left: 0%;
+  }
+  .galeriaFotos {
+    margin-top: 100px;
+  }
+}
 @media screen and (max-width: 320px) {
   html {
     font-size: 55%;
@@ -591,18 +573,10 @@ h3 {
   header {
     left: -120%;
   }
-  header.active{
+  header.active {
     left: 0%;
   }
-  .home {
-    margin: 0;
-    text-align: center;
+  .galeriaFotos {
+    margin-top: 100px;
   }
-  .btn {
-    display: flex;
-    justify-items: center;
-    justify-content: center;
-  }
-  
-}
-
+}/*# sourceMappingURL=style2.css.map */
