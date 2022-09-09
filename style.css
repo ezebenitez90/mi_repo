@@ -131,7 +131,7 @@ section {
   gap: 1.5rem;
   padding-top: 70px;
   /*margin-left: 100px;*/
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/media/header.index.foto.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(media/header.index.foto.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
